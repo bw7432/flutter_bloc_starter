@@ -4,10 +4,10 @@ Flutter Bloc Starter app is a production ready starter template for creating flu
 It demonstrates the use of flutter bloc for creating login, sign up, and sign out functionality.
 
 ## Flutter Bloc
-Use the bloc patter to create flutter apps with a solid design pattern, are easy to work on, and organize code efficently.
+Use the bloc pattern to create flutter apps with a standardized design pattern, are easy to work on, and organize code efficently.
 
 ## Flutter Files
-This plugin (Flutter Files) for Visual Studio code make generating boilerplate bloc code much easier. Flutter Files generated code lives in the "Features" directory in this example. These are you pages.
+This plugin (Flutter Files) for Visual Studio code makes generating boilerplate bloc code much easier. Flutter Files generated code lives in the "Features" directory in this example. These are your pages.
 
 ## What's Inside
 - features - pages, state, events, screens
@@ -29,6 +29,11 @@ git clone https://github.com/flatlogic/react-native-starter.git
 # Navigate to clonned folder and Install dependencies
 flutter pub get
 ```
+
+#### 2. Install the flutter files plugin for Visual Studio code
+````
+Right click a folder in your file tree and select new small bloc pack. This will generate a boilerplate page, event, screen, state, and bloc files.
+````
 
 A few resources to get you started if this is your first Flutter project:
 
