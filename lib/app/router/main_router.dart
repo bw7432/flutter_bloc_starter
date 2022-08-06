@@ -13,7 +13,7 @@ class MainRouter {
         );
       case '/app':
         return MaterialPageRoute(
-          builder: (_) => const App(),
+          builder: (_) => App(),
         );
       case '/login':
         return MaterialPageRoute(
