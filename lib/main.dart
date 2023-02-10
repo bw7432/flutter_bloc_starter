@@ -1,3 +1,4 @@
+import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_starter/app/router/main_router.dart';
 import 'package:flutter_starter/app/services/navigator_service.dart';
@@ -39,7 +40,7 @@ class _MainState extends State<Main> {
         theme: theme,
         darkTheme: darkTheme,
         navigatorObservers: [
-          locator<FirebaseAnalyticsService>().getAnalyticsObserver()
+          // locator<FirebaseAnalyticsService>().getAnalyticsObserver()
         ],
         onGenerateRoute: _mainRouter.onGenerateRoute,
         navigatorKey: locator<NavigatorService>().navigatorKey,
