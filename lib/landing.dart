@@ -20,7 +20,7 @@ class _LandingState extends State<Landing> {
     var _userId = (prefs.getInt('userId') ?? 0);
     if (_userId == 0) {
       Navigator.pushNamedAndRemoveUntil(
-          context, '/login', ModalRoute.withName('/login'));
+          context, '/app', ModalRoute.withName('/login'));
     } else {
       Navigator.pushNamedAndRemoveUntil(
           context, '/app', ModalRoute.withName('/'));
