@@ -52,8 +52,7 @@ class HomeScreenState extends State<HomeScreen> {
                 Text(currentState.errorMessage),
                 Padding(
                   padding: const EdgeInsets.only(top: 32.0),
-                  child: RaisedButton(
-                    color: Colors.blue,
+                  child: ElevatedButton(
                     child: Text('reload'),
                     onPressed: _load,
                   ),
@@ -61,7 +60,7 @@ class HomeScreenState extends State<HomeScreen> {
               ],
             ));
           }
-           if (currentState is InHomeState) {
+          if (currentState is InHomeState) {
             return Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -70,8 +69,7 @@ class HomeScreenState extends State<HomeScreen> {
                   const Text('Flutter files: done'),
                   Padding(
                     padding: const EdgeInsets.only(top: 32.0),
-                    child: RaisedButton(
-                      color: Colors.red,
+                    child: ElevatedButton(
                       child: Text('throw error'),
                       onPressed: () => _load(true),
                     ),
@@ -81,9 +79,8 @@ class HomeScreenState extends State<HomeScreen> {
             );
           }
           return Center(
-              child: CircularProgressIndicator(),
+            child: CircularProgressIndicator(),
           );
-          
         });
   }
 

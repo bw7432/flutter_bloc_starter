@@ -64,8 +64,7 @@ class SettingsScreenState extends State<SettingsScreen> {
                     Text(currentState.errorMessage),
                     Padding(
                       padding: const EdgeInsets.only(top: 32.0),
-                      child: RaisedButton(
-                        color: Colors.blue,
+                      child: ElevatedButton(
                         child: Text('reload'),
                         onPressed: _load,
                       ),
@@ -82,8 +81,7 @@ class SettingsScreenState extends State<SettingsScreen> {
                       const Text('Flutter files: done'),
                       Padding(
                         padding: const EdgeInsets.only(top: 32.0),
-                        child: RaisedButton(
-                          color: Colors.red,
+                        child: ElevatedButton(
                           child: Text('Logout'),
                           onPressed: () => logout(),
                         ),

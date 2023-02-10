@@ -74,8 +74,7 @@ class LoginScreenState extends State<LoginScreen> {
                 Text(currentState.errorMessage),
                 Padding(
                   padding: const EdgeInsets.only(top: 32.0),
-                  child: RaisedButton(
-                    color: Colors.blue,
+                  child: ElevatedButton(
                     child: const Text('reload'),
                     onPressed: _load,
                   ),

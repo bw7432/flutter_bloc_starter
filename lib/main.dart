@@ -21,10 +21,29 @@ class _MainState extends State<Main> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      onGenerateRoute: _mainRouter.onGenerateRoute,
-      navigatorKey: locator<NavigatorService>().navigatorKey,
+    return AdaptiveTheme(
+      light: ThemeData(
+        brightness: Brightness.light,
+        primarySwatch: Colors.blue,
+        bottomAppBarColor: Colors.blue,
+        iconTheme: const IconThemeData(color: Colors.black45),
+      ),
+      dark: ThemeData(
+        brightness: Brightness.dark,
+        primarySwatch: Colors.blue,
+        iconTheme: const IconThemeData(color: Colors.white60),
+      ),
+      initial: AdaptiveThemeMode.system,
+      builder: (theme, darkTheme) => MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: theme,
+        darkTheme: darkTheme,
+        navigatorObservers: [
+          locator<FirebaseAnalyticsService>().getAnalyticsObserver()
+        ],
+        onGenerateRoute: _mainRouter.onGenerateRoute,
+        navigatorKey: locator<NavigatorService>().navigatorKey,
+      ),
     );
   }
 }

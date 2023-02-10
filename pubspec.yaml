@@ -41,6 +41,7 @@ dependencies:
   formz: ^0.4.1
   flutter_bloc: ^8.0.1
   equatable: ^2.0.3
+  adaptive_theme: ^3.1.1
 
 dev_dependencies:
   flutter_test:
