@@ -26,8 +26,8 @@ class _MainState extends State<Main> {
       light: ThemeData(
         brightness: Brightness.light,
         primarySwatch: Colors.blue,
-        bottomAppBarColor: Colors.blue,
         iconTheme: const IconThemeData(color: Colors.black45),
+        bottomAppBarTheme: const BottomAppBarTheme(color: Colors.blue),
       ),
       dark: ThemeData(
         brightness: Brightness.dark,
