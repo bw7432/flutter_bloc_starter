@@ -40,6 +40,9 @@ A few resources to get you started if this is your first Flutter project:
 - [Flutter Bloc](https://github.com/felangel/bloc/tree/master/packages/flutter_bloc)
 - [Flutter Files](https://github.com/Gorniv/vscode-flutter-files)
 
+An app made from this template
+- [SwiftLists Grocery Lists App](https://swiftlists.app)
+
 ### Flutter Documentatioin
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
