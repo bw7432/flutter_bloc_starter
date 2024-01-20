@@ -199,9 +199,8 @@ class SignUpScreenState extends State<SignUpScreen> {
                           child: const Text('Sign Up'),
                           // disabledColor: Colors.blueAccent.withOpacity(0.6),
                           // color: Colors.blueAccent,
-                          onPressed: currentState.status.isValidated
-                              ? () => doSignUp()
-                              : null,
+                          onPressed:
+                              currentState.status ? () => doSignUp() : null,
                         ),
                       ),
                     ])

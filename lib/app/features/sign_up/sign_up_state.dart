@@ -61,14 +61,14 @@ class InSignUpState extends SignUpState {
     this.password = const Password.pure(),
     this.confirmPassword = const ConfirmPassword.pure(),
     this.exceptionError = '',
-    this.status = FormzStatus.pure,
+    this.status = false,
   }) : super();
 
   final Email email;
   final Password password;
   final ConfirmPassword confirmPassword;
   final String exceptionError;
-  final FormzStatus status;
+  final bool status;
 
   @override
   String toString() => 'InSignUpState';
@@ -100,7 +100,7 @@ class InSignUpState extends SignUpState {
     Password? password,
     String? error,
     ConfirmPassword? confirmPassword,
-    FormzStatus? status,
+    bool? status,
   }) {
     return InSignUpState(
       email: email ?? this.email,
@@ -118,14 +118,14 @@ class IsSignUpState extends SignUpState {
     this.password = const Password.pure(),
     this.confirmPassword = const ConfirmPassword.pure(),
     this.exceptionError = '',
-    this.status = FormzStatus.pure,
+    this.status = false,
   }) : super();
 
   final Email email;
   final Password password;
   final ConfirmPassword confirmPassword;
   final String exceptionError;
-  final FormzStatus status;
+  final bool status;
 
   @override
   String toString() => 'InSignUpState';
@@ -159,7 +159,7 @@ class IsSignUpState extends SignUpState {
     Password? password,
     String? error,
     ConfirmPassword? confirmPassword,
-    FormzStatus? status,
+    bool? status,
   }) {
     return InSignUpState(
       email: email ?? this.email,

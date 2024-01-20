@@ -167,9 +167,8 @@ class LoginScreenState extends State<LoginScreen> {
                           child: const Text('Login'),
                           // disabledColor: Colors.blueAccent.withOpacity(0.6),
                           // color: Colors.blueAccent,
-                          onPressed: currentState.status.isValidated
-                              ? () => doLogin()
-                              : null,
+                          onPressed:
+                              currentState.status ? () => doLogin() : null,
                         ),
                       ),
                     ])

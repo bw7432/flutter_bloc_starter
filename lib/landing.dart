@@ -18,9 +18,10 @@ class _LandingState extends State<Landing> {
   _loadUserInfo() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     var _userId = (prefs.getInt('userId') ?? 0);
+    print(_userId);
     if (_userId == 0) {
       Navigator.pushNamedAndRemoveUntil(
-          context, '/app', ModalRoute.withName('/login'));
+          context, '/login', ModalRoute.withName('/login'));
     } else {
       Navigator.pushNamedAndRemoveUntil(
           context, '/app', ModalRoute.withName('/'));

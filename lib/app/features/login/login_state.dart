@@ -56,7 +56,7 @@ class InLoginState extends LoginState {
   InLoginState(
       {this.email = const Email.pure(),
       this.password = const Password.pure(),
-      this.status = FormzStatus.pure,
+      this.status = false,
       this.exceptionError = '',
       this.accountExists = false,
       this.emailGuess = ''})
@@ -65,7 +65,7 @@ class InLoginState extends LoginState {
   /// notify change state without deep clone state
   final Email email;
   final Password password;
-  final FormzStatus status;
+  final bool status;
   final String exceptionError;
   final bool accountExists;
   final String emailGuess;
@@ -102,7 +102,7 @@ class InLoginState extends LoginState {
   InLoginState copyWith(
       {Email? email,
       Password? password,
-      FormzStatus? status,
+      bool? status,
       String? error,
       bool? accountExists,
       String? emailGuess}) {
@@ -142,7 +142,7 @@ class IsLoginState extends LoginState {
   IsLoginState(
       {this.email = const Email.pure(),
       this.password = const Password.pure(),
-      this.status = FormzStatus.pure,
+      this.status = false,
       this.exceptionError = '',
       this.accountExists = false,
       this.emailGuess = ''})
@@ -151,7 +151,7 @@ class IsLoginState extends LoginState {
   /// notify change state without deep clone state
   final Email email;
   final Password password;
-  final FormzStatus status;
+  final bool status;
   final String exceptionError;
   final bool accountExists;
   final String emailGuess;
@@ -188,7 +188,7 @@ class IsLoginState extends LoginState {
   IsLoginState copyWith(
       {Email? email,
       Password? password,
-      FormzStatus? status,
+      bool? status,
       String? error,
       bool? accountExists,
       String? emailGuess}) {
